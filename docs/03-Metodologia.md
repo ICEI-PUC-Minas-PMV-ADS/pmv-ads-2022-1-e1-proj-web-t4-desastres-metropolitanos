@@ -37,24 +37,37 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ## Gerenciamento de Projeto
 
+Para realização do Gerenciamento de Projetos o time se deliberou a utilização de metodologias ágeis. O método escolhido é o ScrumBan que é a prática de usar o Scrum com um quadro estilo Kanban para gestão visual de demandas e outras práticas processuais contínuas. (DUARTE, 2018)
+
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+Os atores do time estão organizados da seguinte maneira:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+ ●      Scrum Master: Letícia Rosolem
+ ●      Product Owner: Monica Machado
+ ●      Equipe de Desenvolvimento
+  ○      Alexandre Alves
+  ○      Rafael Rodrigues
+  ○      Matheus Sales
+ ●      Equipe de Design
+  ○      Alberth Ferreira
+
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+Para garantir a organização e distribuição das tarefas do projeto utilizando a metodologia do Kanban, o time está utilizando o Github estruturado com as seguintes colunas: 
  
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Backlog: Repositório com as tarefas a serem iniciadas pelo P.O., essa coluna  representa o Product Backlog. Todas os requisitos funcionais identificados durante o desenvolvimento do projeto devem ser especificados como uma "issue" e incorporados a esta coluna.
+To Do: Esta coluna representa os itens selecionados pelo P.O. para entrar na Sprint Backlog. Esses itens passam de itens de backlog para itens prontos para serem iniciados.
+Doing: Essa coluna apresenta as tarefas selecionadas pelos desenvolvedores, design e negócios que estão em atividade na Sprint. Nessa coluna é possível fazer o acompanhamento das atividades desenvolvidas na sprint
+Done: Essa coluna apresenta os requisitos que foram desenvolvidos e passaram pelos testes e controle de qualidade e estão prontos para serem entregues ao usuário final. Nessa etapa não há revisões a serem executadas, o item está pronto e agendado para ser lançado ao usuário.
+ 
+O quadro Kanban do time será conduzido através da ferramenta Project do GitHub, acesso em https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t4-desastres-metropolitanos/projects/1  como apresentado na Figura na Figura X. A definição desta estrutura se baseou na proposta feita por Ladas (2008).
+ 
+
+A tarefas são etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
+
+ 
 
 ### Ferramentas
 
