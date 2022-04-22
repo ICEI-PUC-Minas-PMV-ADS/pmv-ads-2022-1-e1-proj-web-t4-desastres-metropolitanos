@@ -62,7 +62,7 @@ To Do: Esta coluna representa os itens selecionados pelo P.O. para entrar na Spr
 Doing: Essa coluna apresenta as tarefas selecionadas pelos desenvolvedores, design e negócios que estão em atividade na Sprint. Nessa coluna é possível fazer o acompanhamento das atividades desenvolvidas na sprint
 Done: Essa coluna apresenta os requisitos que foram desenvolvidos e passaram pelos testes e controle de qualidade e estão prontos para serem entregues ao usuário final. Nessa etapa não há revisões a serem executadas, o item está pronto e agendado para ser lançado ao usuário.
  
-O quadro Kanban do time será conduzido através da ferramenta Project do GitHub, acesso em https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t4-desastres-metropolitanos/projects/1  como apresentado na Figura na Figura X. A definição desta estrutura se baseou na proposta feita por Ladas (2008).
+O quadro Kanban do time será conduzido através da ferramenta Project do GitHub, acesso em https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t4-desastres-metropolitanos/projects/1  como apresentado na Figura na Figura X. A definição desta estrutura se baseou na proposta feita por Ladas (2008)
  
 
 A tarefas são etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
