@@ -1,35 +1,101 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Dentre as preocupações para a montagem da interface do sistema, estamos estabelecendo foco em questões como agilidade, acessibilidade e usabilidade. Desta forma, o projeto tem uma identidade visual padronizada em todas as telas que são projetadas para funcionamento em desktops e dispositivos móveis.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+O diagrama apresentado na Figura X mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o ambiente MarvelApp do projeto. (https://marvelapp.com/prototype/612426f/screen/86120135)
+<br><br><br>
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+ ![Exemplo de UserFlow](img/userflow.png)
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+ <br><center>Figura 1 - Fluxo de telas do usuário<center>
+<br><br><br>
 
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
-
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. As telas do sistema apresentam uma estrutura comum que é apresentada na Figura X. Nesta estrutura, existem 3 grandes blocos, descritos a seguir. São eles:
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+-	Cabeçalho - local onde são dispostos elementos fixos de identidade (logo) e navegação principal do site (menu da aplicação);
+-	Conteúdo - apresenta o conteúdo da tela em questão;
+-	Rodapé - apresenta os elementos de navegação secundária, geralmente associados a informações adicionais.
+ <br><br>
+
+ ![Exemplo de UserFlow](img/wireframe.png)
+ <br><br>
+
+### Tela - Início
+
+ A tela de Início mostra as principais informações sobre o site, seu objetivo e sua importância na prestação de serviços. 
+ 
+<br><br><br>
+
+ ![Exemplo de UserFlow](img/Telainicio.png)
+
+ <br><center>Figura 2 - Tela Inicial<center>
+<br><br><br>
+ 
+ ### Tela - Notícias
+ 
+ A tela de Notícias mostra notícias de destaque a partir da API utilizada pelo sistema. Com base na estrutura padrão, o bloco de Conteúdo traz as notícias em destaque (imagem, título, data, fonte e resumo, ícone de compartilhamento).
+ 
+ <br><br><br>
+
+ ![Exemplo de UserFlow](img/Telanoticias.png)
+
+ <br><center>Figura 3 - Tela Notícias<center>
+<br><br><br>
+ 
+### Tela - Notícia Aberta
+ 
+ Ao clicar em uma notícia será exibido seu conteúdo integral permitindo ao usuário compartilhar o conteúdo em suas redes sociais além de comentar e ver os comentários de outros usuários.
+  <br><br><br>
+
+ ![Exemplo de UserFlow](img/Telanoticiaaberta.png)
+
+ <br><center>Figura 4 - Tela Notícia Aberta<center>
+<br><br><br>
+ 
+### Tela - Informar Incidente
+ 
+ A tela Informar Incidente permite ao usuário enviar informações sobre incidentes que tenha observado, é solicitado algumas informações pessoais (nome, telefone e e-mail) uma descrição do incidente e a melhor forma de contato (e-mail, telefone, WhatsApp), após o preenchimento o usuário deverá clicar no botão “Enviar”.
+   <br><br><br>
+
+ ![Exemplo de UserFlow](img/TelaInformarincidente.png)
+
+ <br><center>Figura 5 - Tela Informar Incidente<center>
+<br><br><br>
+ 
+### Tela - Cadastre-se
+ 
+ A tela Cadastre-se permite ao usuário efetuar cadastro para receber informações sobre regiões de interesse e comentar notícias. É solicitado preencher formulário com nome, e-mail e senha e então clicar no botão “Cadastrar”.
+    <br><br><br>
+
+ ![Exemplo de UserFlow](img/Telacadastro.png)
+
+ <br><center>Figura 6 - Tela Cadastre-se<center>
+<br><br><br>
+
+ ### Tela - Login
+ 
+ A tela Login permite ao usuário efetuar login para comentar notícias e informar incidentes. É solicitado informar e-mail e senha previamente cadastrados, logo após o usuário deve clicar no botão “LOGAR”.
+  <br><br><br>
+
+ ![Exemplo de UserFlow](img/Telalogin.png)
+
+ <br><center>Figura 7 - Tela Login<center>
+<br><br><br>
+ 
+### Tela - Ajuda
+ 
+ A tela Ajuda contém as principais perguntas e respostas feitas pelos usuários e permite que o usuário envie sua dúvida caso ela não esteja na lista.
+   <br><br><br>
+
+ ![Exemplo de UserFlow](img/Telaajuda.png)
+
+ <br><center>Figura 8 - Tela Ajuda<center>
+<br><br><br>
+ 
+ 
