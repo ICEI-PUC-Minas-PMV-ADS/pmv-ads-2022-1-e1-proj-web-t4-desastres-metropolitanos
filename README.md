@@ -1,23 +1,24 @@
 # DESASTRES METROPOLITANOS
 
-`CURSO`
+`Analise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Primeiro Semestre 2022`
 
-`SEMESTRE`
-
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto tem como objetivo desenvolver um site para auxiliar os órgãos competentes a mitigar os problemas relacionados aos desastres metropolitanos.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* ALEXANDRE DA SILVA ALVES
+* ALBERTH RENY FERREIRA
+* LETICIA ALVES DOS SANTOS ROSOLEM
+* MATHEUS PEREIRA SALES
+* MONICA DE SOUZA MACHADO
+* RAFAEL ALVARENGA RODRIGUES
+
 
 ## Orientador
 
-* Nome completo do professor 1
+* Professora Sandra Maria Silveira
 
 ## Instruções de utilização
 
