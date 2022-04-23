@@ -7,7 +7,18 @@ A metodologia contempla as definições de ferramental utilizado pela equipe tan
 
 ## Controle de Versão
 
-Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow abordado por Vietro (2015), mostrado na Figura xxxx. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados. 
+Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow abordado por Vietro (2015), mostrado na Figura 1. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados.
+<br><br><br><br>
+
+
+
+
+ ![Exemplo de UserFlow](img/gestao_codigo_fonte.png)
+
+ <br><center>Figura 1 - Fluxo de controle do código fonte no repositório git<center>
+ <br> <br>
+
+
 
 
 Cada branches tem sua função, como pode ser visto abaixo:
@@ -34,16 +45,24 @@ Os atores do time estão organizados da seguinte maneira:
  - Scrum Master: Letícia Rosolem
  - Product Owner: Monica Machado
  - Equipe de Desenvolvimento:
-  -   Alexandre Alves
-  -   Rafael Rodrigues
-  -   Matheus Sales
+   -   Alexandre Alves
+   -   Rafael Rodrigues
+   -   Matheus Sales
  - Equipe de Design:
-  -   Alberth Ferreira
+   -   Alberth Ferreira
 
 
 ### Processo
 
 Para garantir a organização e distribuição das tarefas do projeto utilizando a metodologia do Kanban, o time está utilizando o Github estruturado com as seguintes colunas: 
+
+ <br><br><br><br>
+ 
+![Exemplo de GerenciamentoProjetos](img/gerenciamentoproj_1.png)
+
+</center>Figura 2 - Tela Projeto Scrumban<center>
+ 
+ <br><br><br><br>
  
 **Backlog:** Repositório com as tarefas a serem iniciadas pelo P.O., essa coluna  representa o Product Backlog. Todas os requisitos funcionais identificados durante o desenvolvimento do projeto devem ser especificados como uma "issue" e incorporados a esta coluna.
 
@@ -53,13 +72,16 @@ Para garantir a organização e distribuição das tarefas do projeto utilizando
 
 **Done:** Essa coluna apresenta os requisitos que foram desenvolvidos e passaram pelos testes e controle de qualidade e estão prontos para serem entregues ao usuário final. Nessa etapa não há revisões a serem executadas, o item está pronto e agendado para ser lançado ao usuário.
  
-O quadro Kanban do time será conduzido através da ferramenta Project do GitHub, acesso em https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t4-desastres-metropolitanos/projects/1  como apresentado na Figura na Figura X. A definição desta estrutura se baseou na proposta feita por Ladas (2008)
+O quadro Kanban do time será conduzido através da ferramenta Project do GitHub, acesso em https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t4-desastres-metropolitanos/projects/1  como apresentado na Figura na Figura 3. A definição desta estrutura se baseou na proposta feita por Ladas (2008)
  
-
 A tarefas são etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
 
+ <br><br><br><br>
  
-
+ ![Exemplo de GerenciamentoProjetos](img/gerenciamentoproj_2.png)
+ </center>Figura 3 - Etiquetas e Descrições do Projeto<center>
+<br><br><br><br>
+ 
 ### Ferramentas
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue. 
