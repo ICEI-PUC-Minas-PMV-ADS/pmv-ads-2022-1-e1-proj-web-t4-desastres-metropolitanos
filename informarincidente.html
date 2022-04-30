@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <META charset="UTF-8">
+    <title>Informar Incidente</title>
+    <!-- CASO QUEIRA RESETAR FORMATAÇÃO PADRÃO CSS <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+    </header>
+    
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" placeholder="email@dominio.com" required>
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" placeholder="(xx) xxxxx-xxxx" required>
+
+            <label for="local">Local do incidente ou Área de risco</label>
+            <input type="text" id="local" class="input-padrao" placeholder="Rua Nº, Bairro, Cidade-XX" required>
+
+            <label for="mensagem">Descreva o ocorrido</label>
+            <textarea cols="70" rows="5" id="mensagem" class="input-padrao" required></textarea>
+
+            <div>
+                <p>Qual o nível de urgência deste alerta?</p>
+                <label for="alto"><input type="radio" name="alerta" value="alto" id="alto" >Alto</label>
+                <label for="baixo"><input type="radio" name="alerta" value="baixo" id="baixo" checked>Baixo</label>
+            </div>
+
+            <label><input type="checkbox" checked>
+            Gostaria de receber alertas da região informada via WhatsApp?
+            </label>
+            <input type="submit" value="Enviar" class="enviar">
+                
+        </form>
+    </main>
+
+    <footer>
+    </footer>
+
+
+
+
+</body>
+</html>
