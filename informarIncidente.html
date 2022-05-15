@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<META charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>iDM</title>
+</head>
+<body>
+	<header>
+		<div class="container-logo">
+			<div class="logo-imagem"></div>
+				<h1><img src="logo.png"></h1>
+			<div class="logo-texto">
+				<h1>iDM</h1>
+			</div>
+		</div><!--Container Logo-->
+		<div class="menu">
+			<ul>
+				<li><a href="inicio.html">INÍCIO</li></a>
+                <li><a href="noticias.html">NOTÍCIAS</li></a>
+                <li><a href="informarIncidente.html">INFORMAR INCIDENTE</li></a>
+                <li><a href="cadastre-se.html">CADASTRE-SE</li></a>
+                <li><a href="login.html">LOGIN</li></a>
+                <li><input type="text" placeholder=" Pesquise aqui"></li>
+			</ul><!-- Menu-->
+		</div>
+	</header>
+
+	<main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" placeholder="email@dominio.com" required>
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" placeholder="(xx) xxxxx-xxxx" required>
+
+            <label for="local">Local do incidente ou Área de risco</label>
+            <input type="text" id="local" class="input-padrao" placeholder="Rua nº, Bairro, Cidade-XX" required>
+
+            <label for="mensagem">Descreva o ocorrido</label>
+            <textarea cols="70" rows="5" id="mensagem" class="input-padrao" required></textarea>
+
+            <div>
+                <p>Qual o nível de urgência deste alerta?</p>
+                <label for="alto"><input type="radio" name="alerta" value="alto" id="alto" >Alto</label>
+                <label for="baixo"><input type="radio" name="alerta" value="baixo" id="baixo" checked>Baixo</label>
+            </div>
+
+            <label><input type="checkbox" checked>
+            Gostaria de receber alertas da região informada via WhatsApp?
+            </label>
+            <input type="submit" value="Enviar" class="enviar">
+                
+        </form>
+    </main>
+
+	<footer>
+        <div class="telefones">
+            <h2>Telefones:</h2>
+            <p>193 Corpo de Bombeiros</p>
+            <p>199 Defesa Civil</p>
+            <p>192 Samu</p>
+        </div>
+		<div class="rodape">
+			<ul>
+			   <li><a href="">FACEBOOK</li></a>
+               <li><a href="">TWITER</li></a>
+               <li><a href="">INSTAGRAM</li></a>
+               <li><a href="">AJUDA</li></a>
+			</ul>
+		</div>
+	</footer>
+
+
+
+
+</body>
+
