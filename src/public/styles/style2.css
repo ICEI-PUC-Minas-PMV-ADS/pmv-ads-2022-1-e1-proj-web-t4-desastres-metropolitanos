@@ -88,6 +88,60 @@ form label, p {
     cursor: pointer;
 }
 
+table{
+    width: 100%;
+    margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+    padding: .7em;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+th{
+    font-weight: bold;
+    background-color: #EEE;
+}
+
+.th-descricao {
+    width: 35%;
+}
+
+.filtros {
+    display: flex ;
+
+}
+
+#filtro_local {
+    margin-right: 24px ; 
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 16px;
+    background: #FE4040;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#data_start {
+    margin-right: 24px; 
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 16px;
+    background: #FE4040;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
 
 /* CSS do rodapé */
 footer {
@@ -133,3 +187,4 @@ footer {
     color:  #FE4040;
     text-decoration: underline;
 }
+

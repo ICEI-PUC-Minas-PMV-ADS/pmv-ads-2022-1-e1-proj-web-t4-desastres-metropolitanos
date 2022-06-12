@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<META charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles/style2.css">
+    <title>iDM</title>
+</head>
+<body onload="listaIncidentes()">
+	<header>
+		<div class="container-logo">
+			<div class="logo-imagem"></div>
+				<h1><img src="../public/img/índice.jpg"></h1>
+			<div class="logo-texto">
+				<h1>iDM</h1>
+			</div>
+		</div><!--Container Logo-->
+		<div class="menu">
+			<ul>
+				<li><a href="inicio.html">INÍCIO</li></a>
+                <li><a href="noticias.html">NOTÍCIAS</li></a>
+                <li><a href="informarIncidente.html">INFORMAR INCIDENTE</li></a>
+                <li><a href="cadastre-se.html">CADASTRE-SE</li></a>
+                <li><a href="login.html">LOGIN</li></a>
+                <li><a href="alerta.html">ALERTAS</li></a>
+                <li><input type="text" placeholder=" Pesquise aqui"></li>
+			</ul><!-- Menu-->
+		</div>
+	</header>
+
+	<main>
+
+        <div>
+            <h1>Alertas enviados:</h1>
+            <form id="form-contato">            
+                <div class="filtros">
+                    <div>
+                        <select name="filtro_local" id="filtro_local" onchange="listaIncidentes()" class="">
+                            <option value="">Selecione a Localidade</option>
+                            <option value="Belo Horizonte">Belo Horizonte</option>
+                            <option value="Curitiba">Curitiba</option>
+                            <option value="São Paulo">São Paulo</option>
+                        </select>                    
+                    </div>
+                    <div>
+                        <!-- <label for="data_start">Filtrar data a partir de:</label> -->
+                        <input type="date" id="data_start" name="data_start" onchange="listaIncidentes()"
+                        value="2022-01-01">
+                    </div>
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr class="tabela-tr">
+                        <th>Tipo de Usuário</th>
+                        <th>Local</th>
+                        <th>Bairro</th>
+                        <th>Região</th>
+                        <th class="th-descricao">Descrição do ocorrido</th>
+                        <th>Nivel de alerta</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody id="incidentes-enviados">    
+                </tbody>
+            </table>
+
+        </div>
+
+    </main>
+
+	<footer>
+        <div class="telefones">
+            <h2>Telefones:</h2>
+            <p>193 Corpo de Bombeiros</p>
+            <p>199 Defesa Civil</p>
+            <p>192 Samu</p>
+        </div>
+		<div class="rodape">
+			<ul>
+			   <li><a href="">FACEBOOK</li></a>
+               <li><a href="">TWITER</li></a>
+               <li><a href="">INSTAGRAM</li></a>
+               <li><a href="">AJUDA</li></a>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="../scripts/db_informarincidente.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        function listaIncidentes(){
+
+            let fc = document.getElementById('filtro_local').value;
+            let fds = document.getElementById('data_start').value;
+
+            $("#incidentes-enviados").empty();
+
+            // Tentativa de filtro por data
+            // var rd = db_informar_incidente.incidentes.filter(
+            //         function (a) {
+            //             return ((a.data) > fds);
+            //         }
+            //     );
+            
+            //console.log(rd)
+
+            for(let i=0; i < db_informar_incidente.incidentes.length; i++){
+                const incidente = db_informar_incidente.incidentes[i]
+                //const rdIncidente = rd[i]
+                
+                // Verifica se os dados do contato batem com os filtros
+                if (((incidente.local == fc) || (fc == '')) ) {
+
+                    $("#incidentes-enviados").append(`<tr>
+                        <td>${incidente.tipoUsuario}</td>
+                        <td>${incidente.local}</td>
+                        <td>${incidente.bairro}</td>
+                        <td>${incidente.regiaoCidade}</td>
+                        <td>${incidente.ocorrido}</td>
+                        <td>${incidente.niveldeAlerta}</td>
+                        <td>${incidente.data}</td>
+                        </tr>
+                        `
+                    );
+                }
+            }
+        }
+    </script>
+
+</body>

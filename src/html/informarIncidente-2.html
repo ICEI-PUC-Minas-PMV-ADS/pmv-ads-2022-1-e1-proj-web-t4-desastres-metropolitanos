@@ -20,30 +20,31 @@
 			<ul>
 				<li><a href="inicio.html">INÍCIO</li></a>
                 <li><a href="noticias.html">NOTÍCIAS</li></a>
-                <li><a href="informarincidente.html">INFORMAR INCIDENTE</li></a>
+                <li><a href="informarIncidente.html">INFORMAR INCIDENTE</li></a>
                 <li><a href="cadastre-se.html">CADASTRE-SE</li></a>
                 <li><a href="login.html">LOGIN</li></a>
+                <li><a href="alerta.html">ALERTAS</li></a>
                 <li><input type="text" placeholder=" Pesquise aqui"></li>
 			</ul><!-- Menu-->
 		</div>
 	</header>
 
 	<main>
-        <form>
+        <form id="form-alerta">
             <label for="nomesobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomesobrenome" class="input-padrao" required>
+            <input type="text" name="nome" id="nomesobrenome" class="input-padrao" required>
             
             <label for="email">E-mail</label>
-            <input type="email" id="email" class="input-padrao" placeholder="email@dominio.com" required>
+            <input type="email" name="email" id="email" class="input-padrao" placeholder="email@dominio.com" required>
             
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" class="input-padrao" placeholder="(xx) xxxxx-xxxx" required>
+            <input type="tel" name="telefone" id="telefone" class="input-padrao" placeholder="(xx) xxxxx-xxxx" required>
 
             <label for="local">Local do incidente ou Área de risco</label>
-            <input type="text" id="local" class="input-padrao" placeholder="Rua nº, Bairro, Cidade-XX" required>
+            <input type="text" name="local" id="local" class="input-padrao" placeholder="Rua nº, Bairro, Cidade-XX" required>
 
             <label for="mensagem">Descreva o ocorrido</label>
-            <textarea cols="70" rows="5" id="mensagem" class="input-padrao" required></textarea>
+            <textarea cols="70" rows="5" name="mensagem" id="mensagem" class="input-padrao" required></textarea>
 
             <div>
                 <p>Qual o nível de urgência deste alerta?</p>
@@ -51,12 +52,31 @@
                 <label for="baixo"><input type="radio" name="alerta" value="baixo" id="baixo" checked>Baixo</label>
             </div>
 
-            <label><input type="checkbox" checked>
+            <label><input type="checkbox" name="whatsapp" checked>
             Gostaria de receber alertas da região informada via WhatsApp?
             </label>
             <input type="submit" value="Enviar" class="enviar">
                 
         </form>
+
+        <div>
+            <h1>Alertas enviados:</h1>
+            <table>
+                <thead>
+                    <tr >
+                        <th>Nome:</th>
+                        <th>Local:</th>
+                        <th>Ocorrido:</th>
+                        <th>Nivel de alerta:</th>
+                    </tr>
+                </thead>
+                <tbody id="alertas-enviados">
+                    
+                </tbody>
+            </table>
+
+        </div>
+
     </main>
 
 	<footer>
@@ -76,8 +96,7 @@
 		</div>
 	</footer>
 
-
-
+	<script src="../scripts/valida-formulario.js"></script>
 
 </body>
 
