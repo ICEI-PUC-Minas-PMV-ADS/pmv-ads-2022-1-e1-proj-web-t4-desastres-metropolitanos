@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<META charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>iDM</title>
+</head>
+<body>
+	<header>
+		<div class="container-logo">
+			<div class="logo-imagem"></div>
+				<h1><img src="logo.png"></h1>
+			<div class="logo-texto">
+				<h1>iDM</h1>
+			</div>
+		</div><!--Container Logo-->
+		<div class="menu">
+			<ul>
+				<li><a href="inicio.html">INÍCIO</li></a>
+                <li><a href="noticias.html">NOTÍCIAS</li></a>
+                <li><a href="informarincidente.html">INFORMAR INCIDENTE</li></a>
+                <li><a href="cadastre-se.html">CADASTRE-SE</li></a>
+                <li><a href="login.html">LOGIN</li></a>
+                <li><input type="text" placeholder=" Pesquise aqui"></li>
+			</ul><!-- Menu-->
+		</div>
+	</header>
+
+</footer>
+<body onload= "init()"> 
+<main>
+    <div>
+    <h1> Cadastro de usuários</h1><br>
+    <p>Preencha o formulário com seus dados.</p>
+    </div>
+
+<form id="formCadastro">
+    
+        <div>
+            <label for="nomeSobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomeSobrenome" class="input-padrao" required>
+        </div>
+        <div>
+            <label for="localCadastro">Rua / Avenida</label>
+            <input type="text" id="localCadastro" class="input-padrao" required>
+        </div>
+        <div>
+            <label for="numeroCadastro">Número</label>
+            <input type="number" pattern="[0-9]" name="numero" id="numeroCadastro" class="input-padrao" required>
+        </div>
+        <div>
+            <label for="bairroCadastro">Bairro</label>
+            <input type="text" name="bairro" id="bairroCadastro" class="input-padrao" required>
+        </div>
+        <div>
+            <label for="cidadeCadastro">Cidade</label>
+            <input type="text" name="cidade" id="cidadeCadastro" class="input-padrao" required>
+        </div>
+        <div>
+            <label for="cepCadastro">CEP</label>
+            <input type="text" pattern="[0-9]{7}" name="cep" id="cepCadastro" class="input-padrao">
+        </div>
+        <div>
+            <label for="emailCadastro">Email</label>
+            <input type="email" id="emailCadastro" class="input-padrao" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Adicione um e-mail válido" placeholder="email@dominio.com" required>
+            
+        </div>
+        <div>
+            <label>Senha</label>
+            <input type="password" name="senha" id="senha" 
+            class="input-padrao" pattern=".{8,}" placeholder="********" title="Favor inserir oito ou mais caracteres" required>
+        </div>
+        <br>
+        <div>
+            <p>Gostaria de receber alertas sobre desastres metropolitanos na sua região?</p>
+            <label>
+                <input type="radio" name="receber-alerta" value="sim" >Sim
+            </label>
+            <label>
+                <input type="radio" name="receber-alerta" value="nao" checked>Não
+            </label>
+        </div>
+        <br>
+        <div>
+            <input id="btnCadastrar" type="submit" value="Enviar" class="enviar">
+        </div>
+    </main>
+ </form>
+
+ <footer>
+    <div class="telefones">
+        <h2>Telefones:</h2>
+        <p>193 Corpo de Bombeiros</p>
+        <p>199 Defesa Civil</p>
+        <p>192 Samu</p>
+    </div>
+
+    <div class="rodape">
+       <ul>
+           <li><a href="">FACEBOOK</li></a>
+           <li><a href="">TWITER</li></a>
+           <li><a href="">INSTAGRAM</li></a>
+           <li><a href="">AJUDA</li></a>
+        </ul>
+    </div>  
+</footer>
+
+<script src="../scripts/db_cadastro.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+    function init() {
+        //Adiciona funcao para tratar eventos
+        $("#btnCadastrar").click(function() {
+             if (!$('#formCadastro')[0].checkValidity()){
+                 displayMessage("Preencha o formulário corretamente.");
+                return;
+
+            }
+        //Obter os valores dos campos
+        let novoTipoNomeSobrenome = $("#nomeSobrenome").val();
+        let novoRuaCadastro = $("#localCadastro").val();
+        let novoNumeroCadastro = $("#numeroCadastro").val();
+        let novoBairroCadastro = $("#bairroCadastro").val();
+        let novoCepCadastro = $("#cepCadastro").val();
+        let novoEmailCadastro = $("#emailCadastro").val();
+        let novoSenha = $("#senha").val();
+        let novoCidadeCadastro = $("#cidadeCadastro").val();
+        let novoIsAlerta;
+        if($("input[name = 'receber-alerta']").val() == "sim") {
+           novoIsAlerta = true;
+        }
+        else{
+            novoIsAlerta = false;
+        }
+
+        let cadastro = { tipoNomeSobrenome: novoTipoNomeSobrenome,
+            ruaCadastro : novoRuaCadastro,
+            numeroCadastro : novoNumeroCadastro,
+            bairroCadastro : novoBairroCadastro,
+            cepCadastro : novoCepCadastro,
+            emailCadastro : novoEmailCadastro,
+            senha : novoSenha,
+            cidadeCadastro : novoCidadeCadastro,
+            isAlerta : novoIsAlerta
+          };
+        //Insere dados no db local storage
+        insertCadastro(cadastro);
+        
+        //Limpeza de formulario
+        $("#formCadastro")[0].reset();
+
+        }
+
+    )}
+        
+    
+</script>
+
+</body>
+</html>
