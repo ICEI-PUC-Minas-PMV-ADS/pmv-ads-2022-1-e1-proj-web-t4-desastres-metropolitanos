@@ -32,16 +32,26 @@
         <div class="box-content" ></div>
         <div>
 	</header>
-
+                 
 	<main>
         <body>
                 <div id = "login-container">      
                 <h1>Login</h1>
                 <form action="">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+                    <div class="form-control">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
+                        <i class="img-error"><img src="./error-icon.svg" alt=""></i>
+                        <i class="img-success"><img src="./success-icon.svg" alt=""></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Senha</label>
+                        <input type="password"id="password" placeholder="Digite a sua senha">
+                        <i class="img-error"><img src="./error-icon.svg" alt=""></i>
+                        <i class="img-success"><img src="./success-icon.svg" alt=""></i>
+                        <small>Error message</small>
+                    </div>
                     <a href="#" id="forgot-pass">Esqueceu a senha?</a>
                     <input type="submit" value="Login">
                 </form>
@@ -49,12 +59,17 @@
                     <p>Ou entre pelas suas redes sociais</p>
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram"> </i>
+                    <i class="fab fa-instagram"></i>
                 </div>
                 <div id = register-container>
                     <p>Ainda não tem uma conta?</p>
                     <a href="#">Cadastre-se agora</a>
+                </div>
+                </div>
+                <script src="index.js"></script>
+                
           </body>
+          
     </main>
 
 	<footer>
@@ -75,7 +90,7 @@
 	</footer>
 
 
-
+    
 
 </body>
 

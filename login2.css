@@ -96,3 +96,67 @@ footer {
     color:  #FE4040;
     text-decoration: underline;
 }
+
+/* validação */
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+display: block;
+width: 100%;
+text-align: left;
+
+font-weight: bold;
+font-size: .8rem;
+}
+
+.form-control input {
+	border-bottom: 2px solid #323232;
+	padding: 10px;
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.form-control input:focus {
+border-bottom: 2px solid #08558B
+}
+
+.form-control.success input {
+	border-bottom: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+	border-bottom: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+	visibility: visible;
+}
+
+.form-control.success i.img-success {
+	visibility: visible;
+}
+
+.form-control.error small{
+	color: #DB5A5A;
+	visibility: visible;
+}
+
+.form-control i {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	visibility: hidden;
+}
+
+.form-control small {
+	visibility: hidden;
+	position: relative;
+	margin-top: 5px;
+	font-size: 14px;
+
+}
