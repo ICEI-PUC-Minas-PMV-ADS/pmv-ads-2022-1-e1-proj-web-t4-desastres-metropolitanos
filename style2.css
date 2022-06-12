@@ -88,6 +88,25 @@ form label, p {
     cursor: pointer;
 }
 
+table{
+    width: 100%;
+    margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+    padding: .7em;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th{
+    font-weight: bold;
+    background-color: #EEE;
+}
+
 /* CSS do rodapé */
 footer {
 	width: 100%;
