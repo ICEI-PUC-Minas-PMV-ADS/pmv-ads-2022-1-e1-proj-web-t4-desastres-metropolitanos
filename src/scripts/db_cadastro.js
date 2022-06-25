@@ -1,5 +1,19 @@
 var db_cadastro_inicial = {
     cadastros: [
+
+        {
+            "id": 1 ,
+            "tipoNomeSobrenome" : "Ana Santos",
+            "ruaCadastro" : "Belo Horizonte",
+            "numeroCadastro": 123,
+            "bairroCadastro" : "Centro",
+            "cepCadastro" : "30100100",
+            "emailCadastro" : "anasantos@gmail.com",
+            "senha" : "123321",
+            "cidadeCadastro" : "Belo Horizonte",
+            "isAlerta": true,
+        },
+
         {
         "id": 1 ,
         "tipoNomeSobrenome" : "Jose Maria",

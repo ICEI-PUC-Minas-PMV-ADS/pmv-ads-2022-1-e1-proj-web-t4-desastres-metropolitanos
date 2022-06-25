@@ -188,3 +188,7 @@ footer {
     text-decoration: underline;
 }
 
+#data {
+    display: none
+}
+
