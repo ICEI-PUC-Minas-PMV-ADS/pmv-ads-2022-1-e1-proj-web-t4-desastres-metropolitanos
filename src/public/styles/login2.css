@@ -1,0 +1,162 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* CSS do cabeçalho */
+header {
+	width: 100%;
+	background-color: #FE4040;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0;
+}
+.container-logo img {
+	width: 100px;
+	height: 100px;
+    border-radius: 30px;
+}
+.container-logo {
+	display: flex;
+	align-items: center;
+}
+.container-logo h1 {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+
+}
+.logo-texto {
+	margin-left: 20px;
+}
+.menu li {
+	display: inline-block;;
+	margin: 0 3px;
+}
+.menu li a {
+	text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 10px;
+}
+.menu li a:hover {
+    color:  #F1C40F;
+    text-decoration: underline;
+}
+.menu input {
+	border-radius: 20px;
+	padding: 5px;
+}
+
+/* CSS do rodapé */
+footer {
+	width: 100%;
+	background-color: lightgray;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0;
+	text-align: right;
+	display: flex;
+}
+.telefones { 
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+}
+.telefones h2 {
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.telefones p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.rodape {
+	display: inline-block;
+	margin-right: 0px;
+}
+.rodape li {
+	display: inline-block;
+	text-align: right;
+}
+.rodape li a {
+	text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 13px;
+	text-align: right;
+    padding: 10px 10px;
+}
+.rodape li a:hover {
+    color:  #FE4040;
+    text-decoration: underline;
+}
+
+/* validação */
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+display: block;
+width: 100%;
+text-align: left;
+
+font-weight: bold;
+font-size: .8rem;
+}
+
+.form-control input {
+	border-bottom: 2px solid #323232;
+	padding: 10px;
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.form-control input:focus {
+border-bottom: 2px solid #08558B
+}
+
+.form-control.success input {
+	border-bottom: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+	border-bottom: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+	visibility: visible;
+}
+
+.form-control.success i.img-success {
+	visibility: visible;
+}
+
+.form-control.error small{
+	color: #DB5A5A;
+	visibility: visible;
+}
+
+.form-control i {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	visibility: hidden;
+}
+
+.form-control small {
+	visibility: hidden;
+	position: relative;
+	margin-top: 5px;
+	font-size: 14px;
+
+}

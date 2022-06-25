@@ -18,12 +18,13 @@
 		</div><!--Container Logo-->
 		<div class="menu">
 			<ul>
-				<li><a href="inicio.html">INÍCIO</li></a>
-                <li><a href="noticias.html">NOTÍCIAS</li></a>
-                <li><a href="informarIncidente.html">INFORMAR INCIDENTE</li></a>
-                <li><a href="cadastre-se.html">CADASTRE-SE</li></a>
+                <li><a href="inicio.html">INÍCIO</li></a>
                 <li><a href="login.html">LOGIN</li></a>
+                <li><a href="noticias.html">NOTÍCIAS</li></a>
+                <li><a href="informarIncidente-2.html">INFORMAR INCIDENTE</li></a>
+                <li><a href="cadastre-se.html">CADASTRE-SE</li></a>
                 <li><a href="alerta.html">ALERTAS</li></a>
+                <li><a href="ajuda.html">AJUDA</li></a>
                 <li><input type="text" placeholder=" Pesquise aqui"></li>
 			</ul><!-- Menu-->
 		</div>
@@ -41,14 +42,15 @@
                             <option value="Belo Horizonte">Belo Horizonte</option>
                             <option value="Curitiba">Curitiba</option>
                             <option value="São Paulo">São Paulo</option>
+                            <option value="Contagem">Contagem</option>
                         </select>                    
                     </div>
-                    <div>
-                        <!-- <label for="data_start">Filtrar data a partir de:</label> -->
-                        <input type="date" id="data_start" name="data_start" onchange="listaIncidentes()"
+                    <div id="data">
+                        <label for="data_start">Filtrar data a partir de:</label> 
+                         <input type="date" id="data_start" name="data_start" onchange="listaIncidentes()"
                         value="2022-01-01">
-                    </div>
-                </div>
+                    </div> 
+                </div> 
             </form>
             <table>
                 <thead>
